@@ -24,20 +24,12 @@
         <allow-intent href="itms-apps:*" />
     </platform>
 	
-	<gap:plugin name="org.apache.cordova.device" version="0.2.12"
-    	source="plugins.cordova.io">
+	<gap:plugin name="cordova-plugin-device" version="1.0.0" source="npm"> 
     </gap:plugin>
-    <gap:plugin name="org.apache.cordova.dialogs" version="0.2.10"
-    	source="plugins.cordova.io">
+    <gap:plugin name="cordova-plugin-dialogs" version="1.0.0" source="npm">
     </gap:plugin>
-    <gap:plugin name="org.apache.cordova.geolocation" version="0.3.10"
-    	source="plugins.cordova.io">
+    <gap:plugin name="cordova-plugin-geolocation" version="1.0.0" source="npm">
     </gap:plugin>
-	<gap:plugin name="org.apache.cordova.vibration" version="0.3.11"
-    	source="plugins.cordova.io">
+	<gap:plugin name="cordova-plugin-vibration" version="1.0.0" source="npm">
     </gap:plugin>
-	<gap:plugin name="org.apache.cordova.push" version="1.4.4"
-    	source="plugins.cordova.io">
-    </gap:plugin>
-	
 </widget>
