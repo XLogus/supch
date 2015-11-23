@@ -1,0 +1,77 @@
+			<div ng-tabs class="tabbable">
+				<ul class="nav nav-tabs">					
+					<li ng-tab-head="active">
+						<a href="#" ng-click="$event.preventDefault()">COMENTARIOS</a>
+					</li>                
+				</ul>				
+				<div class="tab-content" style="overflow: hidden">					
+					<div ng-tab-body="animated fadeInUpBig" class="tab-pane" >
+						<div class="row tienda__rank--totalw" >
+							<div class="col-xs-7">
+								<div class="tienda__rank--total">
+									<i class="fa fa-star fa-star-marcado"  data-ng-repeat="n in [1,rank] | makeRange"></i>
+									<i class="fa fa-star"  data-ng-repeat="n in [1,5-rank] | makeRange"></i>									
+								</div>								
+							</div>
+							<div class="col-xs-5 align-right">
+								{{item.nro_comentarios}} 
+								<span ng-if="item.nro_comentarios>1">votos</span><span ng-if="item.nro_comentarios<=1">voto</span>
+							</div>
+						</div>
+						
+						<div class="row tienda__comentarios">
+							<div class="col-md-12">
+								<div class="tienda__comentario row" data-ng-repeat="comentario in comentarios">
+									<div class="col-xs-3">
+										<div class="tienda__comentario__avatar">
+											<img src="img/icon-user.jpg" alt=""/>
+										</div>
+									</div>
+									<div class="col-xs-9">
+									<div class="tienda__comentario__author">
+										{{comentario.comment_author}}
+									</div>
+									<div class="tienda__comentario__fecha">
+										{{comentario.comment_date}}
+									</div>
+									<div class="tienda__comentario__rating">								
+										<i class="fa fa-star fa-star-marcado"  data-ng-repeat="n in [1,comentario.comment_rating] | makeRange"></i>
+										<i class="fa fa-star"  data-ng-repeat="n in [1,5-comentario.comment_rating] | makeRange"></i>
+									</div>
+									<div class="tienda__comentario__content">
+										{{comentario.comment_content}}
+									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="row tienda__comentarios__form">
+							<div class="col-md-12">
+								<p class="tipo--negro">Déjanos tus comentarios sobre este super</p>
+								<form action="#">
+									<div class="rankingBox">
+										<input name="select" id="star5" type="radio" class="star"  value="5" ng-model="comen.rankcomentario" />
+										<label for="star5"><i class="fa fa-star"></i></label>										
+										
+										<input name="select" id="star4" type="radio" class="star"  value="4" ng-model="comen.rankcomentario" />
+										<label for="star4"><i class="fa fa-star"></i></label>					
+										
+										<input name="select" id="star3" type="radio" class="star"  value="3" ng-model="comen.rankcomentario" />
+										<label for="star3"><i class="fa fa-star"></i></label>					
+										
+										<input name="select" id="star2" type="radio" class="star"  value="2" ng-model="comen.rankcomentario" />
+										<label for="star2"><i class="fa fa-star"></i></label>					
+										
+										<input name="select" id="star1" type="radio" class="star"  value="1" ng-model="comen.rankcomentario" />
+										<label for="star1"><i class="fa fa-star"></i></label>					
+									</div>
+									<br/>
+									<textarea ng-model="comen.comentario" class="textarea" name="comentario" id="" cols="30" rows="10" placeholder="Escribe aqui..."></textarea>
+									<a href="#" ng-click="enviar_comentario(comen); $event.preventDefault()" class="btn btn-primary">ENVIAR COMENTARIO</a>
+								</form>
+							</div>
+						</div>
+					</div><!--tab-->
+				</div>
+			</div><!--tabbable-->		

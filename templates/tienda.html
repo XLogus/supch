@@ -1,0 +1,75 @@
+<div class="container">	
+	<div class="row tienda__volver tipo--{{item.lista_tipo}}">
+		<div class="col-md-12">
+			{{item.lista}}
+			<a href="#home" class="tienda__volver__flecha"><img src="img/icon-arrow-left.png" alt=""/></a>			
+		</div>
+	</div>
+	
+	
+	<div class="row">
+		<div bz-slider delay="7000" autoplay="true">
+            <div class="bz-slide" ng-repeat="(i, slide) in slides" ng-show="i == $slideIndex" ng-class="animation">
+                <img ng-src="{{ slide.image }}" />
+            </div>
+		</div>
+	</div>
+	
+	
+	
+	<div class="row tienda__datosw">
+		<div class="col-xs-6">
+			<h2 class="tienda__datos">{{item.titulo}}</h2>
+			{{item.direccion}}
+		</div>
+		<div class="col-xs-6">
+			<img src="{{item.icon2}}" alt=""/>
+		</div>
+	</div><!--row-->
+	
+	<div class="row tienda__datosw" ng-if="item.lista_tipo=='rojo'">
+		<div class="col-xs-6">
+			<img src="{{item.img}}" alt=""/>
+		</div>
+		<div class="col-xs-6">
+			<h3 class="tienda__datos">HORARIO</h3>
+			{{item.horario}}
+			<br/><br/>
+			<h3 class="tienda__datos">TELÉFONO</h3>
+			{{item.telefono}}
+		</div>
+	</div><!--row-->
+		
+	
+	<div class="row tabWrapper">
+		<div class="col-md-12">
+			<div ng-switch="item.lista_tipo">
+				<div ng-switch-when="rojo">
+					<div ng-include="'templates/rojo.html'" ></div> 
+				</div>
+				<div ng-switch-when="negro">
+					<div ng-include="'templates/negro.html'" ></div> 
+				</div>				
+			</div>			
+		</div>
+	</div><!--row-->
+	
+	
+	<div class="row">
+		<div class="col-md-12">
+		<a class="icon__share col-xs-3 {{item.lista_tipo}}" href="https://www.facebook.com/sharer/sharer.php?u={{item.url}}">
+			<i class="fa fa-facebook"></i>
+		</a>
+		<a class="icon__share col-xs-3 {{item.lista_tipo}}" href="https://twitter.com/home?status={{item.titulo}} {{item.url}}">
+			<i class="fa fa-twitter"></i>
+		</a>
+		<a class="icon__share col-xs-3 {{item.lista_tipo}}" href="mailto:?&subject=Superchinos | {{item.titulo}}&body={{item.titulo}} {{item.url}}">
+			<i class="fa fa-envelope"></i>
+		</a>
+		<a class="icon__share col-xs-3 {{item.lista_tipo}}" href="https://plus.google.com/share?url={{item.url}}">
+			<i class="fa fa-google-plus"></i>
+		</a>
+		</div>
+	</div><!--row-->
+	
+</div>

@@ -1,0 +1,93 @@
+<!DOCTYPE html> 
+<html lang="es-ES">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+      <title>Super chinos</title>
+	  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+	  <link rel="stylesheet" type="text/css" href="styles/font-awesome.min.css" />	  
+      <link rel="stylesheet" type="text/css" href="styles/mobile-angular-ui-desktop.min.css" />
+      <link rel="stylesheet" type="text/css" href="styles/mobile-angular-ui-base.min.css" />
+	  <link rel="stylesheet" type="text/css" href="styles/bz-slider.css" />
+      <link rel="stylesheet" type="text/css" href="styles/app.css" />
+   </head>
+   <body  class="{{slug}}"
+    ng-app="myApp" 
+	ng-controller="MainController"        
+    >      
+	
+	<div ng-include="'sidebar.html'" class="sidebar sidebar-left"></div>
+         <header>
+            <nav class="navbar navbar-app navbar-absolute-top">
+               <div class="navbar-brand navbar-brand-center" ui-yield-to="title">
+                  <a href="#home" id="logo">
+					<img src="img/logo.png" alt="" class="default-logo"/>
+					<img src="img/logo@2x.png" alt="" class="retina-logo"/>
+				  </a>
+               </div>
+               <div class="btn-group pull-left">
+                  <div ui-toggle="uiSidebarLeft" class="btn sidebar-toggle ng-scope">
+                     <button type="button" class="navbar-toggle collapsed">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+                  </div>
+               </div>    
+				<div class="btn-group pull-right" ui-yield-to="navbarAction">
+					<a href="#buscar" class="header__buscar">
+						buscar
+					</a>					
+				</div>
+            </nav>
+            <nav class="navbar navbar-app navbar-absolute-bottom">
+               <div class="navbar__adorno">				
+			   </div>
+			   <div class="navbar__banner">
+				<img src="img/banner-bot.jpg" alt=""/>
+			   </div>
+            </nav>
+         </header>
+	<div class="myApp"
+		ui-swipe-right='Ui.turnOn("uiSidebarLeft")'
+		ui-swipe-left='Ui.turnOff("uiSidebarLeft")'>
+         <div class="app-body" ng-class="{loading: loading}">
+        <div ng-show="loading" class="app-content-loading">
+          <i class="fa fa-spinner fa-spin loading-spinner"></i>
+        </div>
+        <div class="app-content">
+          <ng-view></ng-view>
+        </div>
+      </div>      
+      </div>
+	  <script src="http://maps.googleapis.com/maps/api/js?sensor=false&language=es"></script>
+      <script src="js/includes/angular.js"></script>
+	  <script src="js/includes/angular-animate.min.js"></script>
+      <script src="js/includes/angular-route.min.js"></script>
+      <script src="js/includes/mobile-angular-ui.min.js"></script>      	  	  
+	  <script src="js/includes/ng-map.min.js"></script>
+	  <script src="js/includes/bz-slider.js"></script>
+	  <script src="js/includes/tabs.js"></script>
+	  <script src="js/includes/angular-jwt.min.js"></script>	  
+	  <script src="js/includes/angular-storage.min.js"></script>	  
+	  
+	  
+	  
+	  <script type="text/javascript" src="cordova.js"></script>	  	  
+	  
+      <script src="js/app.js"></script>
+	  <script src="js/filter.js"></script>
+      <script src="js/homePages.js"></script>
+	  <script src="js/tiendaPage.js"></script>
+	  <script src="js/about.js"></script>
+	  <script src="js/login.js"></script>
+	  <script src="js/registro.js"></script>
+	  <script src="js/phone.js"></script>
+	  
+		<script type="text/javascript">
+            app.initialize();
+		</script>
+   </body>
+</html>

@@ -1,0 +1,17 @@
+<div class="container">	
+	<div class="row">
+	<div class="gpslocator">
+		<a href="" ng-click="geolocalizar()">
+			<img src="img/icon-gps@2x.png" alt=""/>
+		</a>		
+	</div>
+	<div class="mapWrapper">
+		<map class="map" pan-control="false" map-type-control="false" zoom-control="false">		
+		<marker id="basepos" position="[{{geolat}}, {{geolong}}]" title="you" icon="{{basemarker}}" ></marker>
+		<marker ng-repeat="super in supers" icon="{{super.icon}}" title="{{super.titulo}}" position="{{super.lat}}, {{super.lng}}" on-click="show_super({{super.id}})"></marker>
+		</map>
+	</div><!--.mapWrapper-->
+	
+	
+	</div>
+</div>

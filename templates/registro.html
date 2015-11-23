@@ -1,0 +1,37 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 align-center">
+			<img src="img/logop@2x.png" width="212" alt=""/>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-xs-1"></div>
+		<div class="col-xs-10">
+			<div class="formWrapper">
+			<h2>Registrate</h2>
+			<form role="form" name="regForm" id="reg-form" ng-submit="registro()" autocomplete="off">
+				<div class="form-group">
+					<label for="nombre" class="sr-only">Nombre</label>
+					<input type="text" name="nombre" placeholder="Nombre" ng-model="user.nombre" id="nombre" class="form-control" required="required">
+				</div>
+				<div class="form-group">
+					<label for="apellido" class="sr-only">Apellido</label>
+					<input type="text" name="apellido" placeholder="Apellido" ng-model="user.apellido" id="apellido" class="form-control" required="required">
+				</div>
+				<div class="form-group">
+					<label for="email" class="sr-only">Email</label>
+					<input type="email" name="email" placeholder="Email" ng-model="user.email" id="email" class="form-control" required="required">
+				</div>
+				<div class="form-group">
+					<label for="key" class="sr-only">Password</label>
+					<input type="password" placeholder="Clave" ng-model="user.password" name="password" id="password" class="form-control" required="required">
+				</div>
+				<input type="submit" id="btn-login" class="btn btn-danger btn-lg btn-block" value="Ingresar">
+			</form>
+			<p class="error">{{error}}</p>			
+			</div>
+		</div>
+		<div class="col-xs-1"></div>
+	</div>
+</div>
