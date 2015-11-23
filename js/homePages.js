@@ -60,7 +60,11 @@ angular.module('app.homePages', [])
 			map.markers.basepos.setPosition(latlng);
 			
 		};
-		navigator.geolocation.getCurrentPosition(onSuccess);
+		var onError = function(error) {
+			 alert('code: ' + error.code + '\n' + 'message: ' + error.message + '\n');
+		}
+		//navigator.geolocation.getCurrentPosition(onSuccess);
+		navigator.geolocation.getCurrentPosition(onSuccess, onError,{enableHighAccuracy: true,maximumAge:60000});
 		
 	};
 	
