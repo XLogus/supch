@@ -18,6 +18,7 @@
     >      
 	
 	<div ng-include="'sidebar.html'" class="sidebar sidebar-left"></div>
+	<div ng-include="'sidebarRight.html'" class="sidebar sidebar-right"></div>
          <header>
             <nav class="navbar navbar-app navbar-absolute-top">
                <div class="navbar-brand navbar-brand-center" ui-yield-to="title">
@@ -36,11 +37,13 @@
 					</button>
                   </div>
                </div>    
-				<div class="btn-group pull-right" ui-yield-to="navbarAction">
-					<a href="#buscar" class="header__buscar">
+				<div class="btn-group  pull-right" ui-yield-to="navbarAction" >
+					<a href="" ui-toggle="uiSidebarRight" class="header__buscar" >
 						buscar
 					</a>					
 				</div>
+				
+				
             </nav>
             <nav class="navbar navbar-app navbar-absolute-bottom">
                <div class="navbar__adorno">				

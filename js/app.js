@@ -141,6 +141,8 @@ myApp.factory("authFactory", ["$http", "$q", "CONFIG", function($http, $q, CONFI
 }]);
 
 
+
+
 myApp.controller('MainController', function($rootScope, $scope){
   $rootScope.$on('$routeChangeStart', function(){
     $rootScope.loading = true;
@@ -149,4 +151,9 @@ myApp.controller('MainController', function($rootScope, $scope){
   $rootScope.$on('$routeChangeSuccess', function(){
     $rootScope.loading = false;
   });
+  /*
+  $rootScope.buscar = function() {
+	  alert("buscando");
+  }
+  */
 });  

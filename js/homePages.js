@@ -8,14 +8,20 @@ angular.module('app.homePages', [])
     };
   })
 
-  .controller('HomeCtrl', function($scope, $http, $location, welcomeMessage, jwtHelper, store, CONFIG) {	
+  .controller('buscadorCtrl', function($scope, $rootScope) {	
+	//$rootScope.busco = '';
+	$scope.onbuscoChange = function(val){
+		$rootScope.busco = val;		
+	};
+  })
+  
+  .controller('HomeCtrl', function($scope, $rootScope, $http, $location, welcomeMessage, jwtHelper, store, CONFIG) {	
 	/*
 	var token = store.get("token");	
 	var tokenPayload = jwtHelper.decodeToken(token);
 	$scope.user = tokenPayload.iss;	
 	//alert($scope.user);
 	*/
-	
 	
 	
 	var marker, map;
@@ -31,6 +37,7 @@ angular.module('app.homePages', [])
 	});
 
 	//alert(window.devicePixelRatio);
+	
 	
 	$scope.pixelratio = window.devicePixelRatio;
 	if($scope.pixelratio > 1.5){		
@@ -64,10 +71,24 @@ angular.module('app.homePages', [])
 			 alert('code: ' + error.code + '\n' + 'message: ' + error.message + '\n');
 		}
 		//navigator.geolocation.getCurrentPosition(onSuccess);
-		navigator.geolocation.getCurrentPosition(onSuccess, onError,{enableHighAccuracy: true,maximumAge:60000});
+		navigator.geolocation.getCurrentPosition(onSuccess, onError,{enableHighAccuracy: true, maximumAge: 75000, timeout: 30000});		
 		
 	};
 	
+	$rootScope.buscar = function() {
+		//alert("ahi toy "+$rootScope.busco);
+		//map.markers.basepos.setPosition($rootScope.busco);
+		var posicion = "";
+		var geocoder = new google.maps.Geocoder();
+		geocoder.geocode( { 'address': $rootScope.busco}, function(results, status) {
+			if (status == google.maps.GeocoderStatus.OK) {
+				posicion = results[0].geometry.location;
+				map.setCenter(posicion);
+				map.setZoom(14);
+				map.markers.basepos.setPosition(posicion);
+			}
+		});
+	};
 
 	
 	$http({
