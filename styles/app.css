@@ -41,7 +41,7 @@ body.home .myApp, body.home .container.ng-scope, body.home .container.ng-scope .
 .navbar-toggle { padding: 9px 5px; margin-top: 5px; }
 
 body .sidebar-left { display:none !important;  background-color:#ed1c2e; width:100%; }
-body.sidebar-left-in .sidebar-left { display:block !important;     z-index: 999; }
+body.sidebar-left-in .sidebar-left { display:block !important;     z-index: 1010; }
 .sidebar-left .list-group-item {   background-color:#ed1c2e; color:#FFF; padding: 20px 15px; text-transform:uppercase; }
 
 .list-group { 
@@ -63,6 +63,13 @@ a#logo img { max-height:20px; }
 
 nav.navbar-absolute-bottom {	
 	background-color:transparent;	
+	position:fixed;
+}
+body.tienda nav.navbar-absolute-bottom, body.about nav.navbar-absolute-bottom {
+	position:relative;
+}
+.navbar-brand-center {
+	position:fixed;
 }
 body.home .navbar__adorno {
 	height:120px;
@@ -92,7 +99,15 @@ body.home .navbar__adorno {
 	background-color:#d11324;
 }
 	.sidebar-right input.buscador__text {
-		border:none;		
+		border: medium none;
+		line-height: 20px;
+		font-size: 18px;
+		padding: 4px;
+	}
+	.header__buscador button.btn-danger {
+		padding: 4px;
+		vertical-align: top;
+		font-size:14px;
 	}
 
 /***************************
@@ -101,7 +116,7 @@ body.home .navbar__adorno {
 .mapWrapper, .map {
 	height:100% !important;
 }
-.gpslocator { position:absolute; z-index:1000; bottom:120px; right:20px; }
+.gpslocator { position:absolute; z-index:1005; bottom:110px; right:20px; }
 .gpslocator img{ width:70px; height:auto; }
 
 /********************************
@@ -125,6 +140,7 @@ h3.tienda__datos { font-size:12px; font-weight:bold; color:#ed1c2e; margin-botto
 a.icon__share { color:#FFF; font-size:32px; background-color:#ed1c2e; border-right:1px solid #FFF; display:block; text-align:center; height:70px; vertical-align:middle; line-height:70px; }
 
 a.icon__share.negro { background-color:#000; }
+a.icon__share.verde { background-color:#43b44f; }
 
 .tabWrapper { padding:20px 0px; }
 
@@ -217,10 +233,10 @@ h2.titulo__about img{ max-width:65px; }
 ***********************************/
 body.login h2, body.registro h2 {
 	text-align:center;
-	font-size:22px;
+	font-size:16px;
 	color:#FFF;
 }
-.formWrapper { padding-top:10px; }
+.formWrapper { padding-top:1px; }
 .form-control { font-size:16px; }
 p.error { color:#FFF; }
 p.estaregistrado, p.estaregistrado a { color:#FFF; font-size:17px; text-align:center; }
@@ -259,6 +275,36 @@ p.estaregistrado, p.estaregistrado a { color:#FFF; font-size:17px; text-align:ce
 img.left { float:left; }
 img.right { float:right; }
 img.center { margin:auto; }
+
+
+.overlay {
+	width:100%;
+	height:100%;
+	position:fixed;
+	background-color:rgba(0,0,0,0.5);
+	z-index:9999;
+	top:0px;
+	text-align:right;
+}
+	.overlay img{
+		display:block;
+		max-width:95%;
+		margin:auto;
+	}
+	.overlay a.cerrar {
+		display:inline-block;
+		background-color:#000;
+		color:#FFF;
+		font-size:28px;
+		line-height:20px;
+		text-align:center;
+		width:30px;
+		height:30px;
+		padding:3px;
+		margin-bottom:5px;
+		margin-right:10px;
+		margin-top:15px;
+	}
 
 
 @media 
