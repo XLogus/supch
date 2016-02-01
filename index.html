@@ -45,13 +45,7 @@
 				
 				
             </nav>
-            <nav class="navbar navbar-app navbar-absolute-bottom">
-               <div class="navbar__adorno">				
-			   </div>
-			   <div class="navbar__banner">
-				<img src="img/banner-bot.jpg" alt=""/>
-			   </div>
-            </nav>
+            
          </header>
 	<div class="myApp"
 		ui-swipe-right='Ui.turnOn("uiSidebarLeft")'
@@ -65,6 +59,16 @@
         </div>
       </div>      
       </div>
+	  
+	  <nav class="navbar navbar-app navbar-absolute-bottom">
+               <div class="navbar__adorno">				
+			   </div>
+			   <div class="navbar__banner">
+				<img src="{{home_banner_footer}}" alt=""/>
+			   </div>
+		</nav>
+	  
+	  
 	  <script src="http://maps.googleapis.com/maps/api/js?sensor=true&language=es"></script>
       <script src="js/includes/angular.js"></script>
 	  <script src="js/includes/angular-animate.min.js"></script>
@@ -75,6 +79,7 @@
 	  <script src="js/includes/tabs.js"></script>
 	  <script src="js/includes/angular-jwt.min.js"></script>	  
 	  <script src="js/includes/angular-storage.min.js"></script>	  
+	  <script src="js/includes/angular-sanitize.js"></script>	  
 	  
 	  
 	  
@@ -88,6 +93,7 @@
 	  <script src="js/login.js"></script>
 	  <script src="js/registro.js"></script>
 	  <script src="js/phone.js"></script>
+	  <script src="js/logout.js"></script>
 	  
 		<script type="text/javascript">
             //app.initialize();

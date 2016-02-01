@@ -8,7 +8,8 @@ var myApp = angular.module('myApp', [
 	'ngMap',
 	'tabs',
 	'angular-jwt', 
-	'angular-storage'
+	'angular-storage',
+	'ngSanitize'
 ]);
 
 myApp.constant('TPL_PATH', 'templates');
@@ -59,7 +60,8 @@ myApp.config(["$routeProvider", "$httpProvider", "jwtInterceptorProvider", "TPL_
 		templateUrl : TPL_PATH + '/home.html',
 		title:'Home',
 		slug:'home',
-		authorization: true
+		authorization: false
+		//authorization: true
     });
 	
 	$routeProvider.when('/about',{
@@ -70,13 +72,22 @@ myApp.config(["$routeProvider", "$httpProvider", "jwtInterceptorProvider", "TPL_
 		authorization: false
     });
 	
+	$routeProvider.when('/logout',{
+		controller : 'LogoutCtrl',
+		templateUrl : TPL_PATH + '/logout.html',
+		title:'Salir',
+		slug:'logout',
+		authorization: false
+    });
+	
 	// Tienda
     $routeProvider.when('/tienda/:tiendaId?',{
 		controller : 'TiendaCtrl',
 		templateUrl : TPL_PATH + '/tienda.html',
 		title:'Tienda',
 		slug:'tienda',
-		authorization: true
+		//authorization: true
+		authorization: false
     });
 	$routeProvider.otherwise({redirectTo: '/'});
   }]);
@@ -101,7 +112,9 @@ myApp.run(['$location', '$rootScope', 'jwtHelper', 'store', function($location, 
 	$rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
         $rootScope.title = current.$$route.title;        
 		$rootScope.slug = current.$$route.slug;        
-        $rootScope.activePath = $location.path();		
+        $rootScope.activePath = $location.path();	
+
+		//$rootScope.home_banner_footer = "http://superchinos.com.ar/nuevo/wp-content/uploads/2015/10/banner-cuido.png";
     });    
     
     //al cambiar de rutas
@@ -157,3 +170,19 @@ myApp.controller('MainController', function($rootScope, $scope){
   }
   */
 });  
+
+
+myApp.filter('nl2br', function() {
+    var span = document.createElement('span');
+    return function(input) {
+        if (!input) return input;
+        var lines = input.split('\n');
+
+        for (var i = 0; i < lines.length; i++) {
+            span.innerText = lines[i];
+            span.textContent = lines[i];
+            lines[i] = span.innerHTML;
+        }
+        return lines.join('<br />');
+    }
+});

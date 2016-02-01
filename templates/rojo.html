@@ -42,7 +42,7 @@
 								<div class="ico-check"><img src="img/ico-check.png" alt=""/></div>
 								<div class="cnt-tab">
 									<h4>OTROS SERVICIOS OFRECIDOS:</h4>
-									{{item.serv}}
+									 <div ng-bind-html="item.serv | nl2br"></div>
 								</div>
 							</li>	
 						</ul>
@@ -91,28 +91,7 @@
 						
 						<div class="row tienda__comentarios__form">
 							<div class="col-md-12">
-								<p>Déjanos tus comentarios sobre este super</p>
-								<form action="#">
-									<div class="rankingBox">
-										<input name="select" id="star5" type="radio" class="star"  value="5" ng-model="comen.rankcomentario" />
-										<label for="star5"><i class="fa fa-star"></i></label>										
-										
-										<input name="select" id="star4" type="radio" class="star"  value="4" ng-model="comen.rankcomentario" />
-										<label for="star4"><i class="fa fa-star"></i></label>					
-										
-										<input name="select" id="star3" type="radio" class="star"  value="3" ng-model="comen.rankcomentario" />
-										<label for="star3"><i class="fa fa-star"></i></label>					
-										
-										<input name="select" id="star2" type="radio" class="star"  value="2" ng-model="comen.rankcomentario" />
-										<label for="star2"><i class="fa fa-star"></i></label>					
-										
-										<input name="select" id="star1" type="radio" class="star"  value="1" ng-model="comen.rankcomentario" />
-										<label for="star1"><i class="fa fa-star"></i></label>					
-									</div>
-									<br/>
-									<textarea ng-model="comen.comentario" class="textarea" name="comentario" id="" cols="30" rows="10" placeholder="Escribe aqui..."></textarea>
-									<a href="#" ng-click="enviar_comentario(comen); $event.preventDefault()" class="btn btn-primary">ENVIAR COMENTARIO</a>
-								</form>
+								<div ng-include="'templates/comentarios.html'" ></div>
 							</div>
 						</div>
 					</div><!--tab-->

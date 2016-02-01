@@ -1,10 +1,53 @@
 			<div ng-tabs class="tabbable">
-				<ul class="nav nav-tabs">					
+				<ul class="nav nav-tabs" ng-if="item.lista_tipo!='negro'">
 					<li ng-tab-head="active">
+						<a href="#" ng-click="$event.preventDefault()">INFORMACIÓN</a>
+					</li>
+					<li ng-tab-head>
 						<a href="#" ng-click="$event.preventDefault()">COMENTARIOS</a>
 					</li>                
 				</ul>				
-				<div class="tab-content" style="overflow: hidden">					
+				<div class="tab-content" style="overflow: hidden">
+					
+					
+					
+					<div ng-tab-body="animated bounceInLeft" class="tab-pane">
+						<ul class="tienda__informacion">
+							<li>
+								<div class="ico-tab"><img src="img/ico-precio.png" alt=""/></div>
+								<div class="ico-check"><img src="img/ico-check.png" alt=""/></div>
+								<div class="cnt-tab">
+									<h4>PRECIOS CUIDADOS:</h4>
+									{{item.pcuidados}}
+								</div>
+							</li>							
+							<li ng-if="item.delivery">
+								<div class="ico-tab"><img src="img/ico-delivery.png" alt=""/></div>
+								<div class="ico-check"><img src="img/ico-check.png" alt=""/></div>
+								<div class="cnt-tab">
+									<h4>DELIVERY:</h4>
+									{{item.delivery}}
+								</div>
+							</li>			
+							<li ng-if="item.mpago">
+								<div class="ico-tab"><img src="img/ico-pago.png" alt=""/></div>
+								<div class="ico-check"><img src="img/ico-check.png" alt=""/></div>
+								<div class="cnt-tab">
+									<h4>MEDIOS DE PAGO:</h4>
+									{{item.mpago}}
+								</div>
+							</li>	
+							<li ng-if="item.serv">
+								<div class="ico-tab"><img src="img/ico-servicios.png" alt=""/></div>
+								<div class="ico-check"><img src="img/ico-check.png" alt=""/></div>
+								<div class="cnt-tab">
+									<h4>OTROS SERVICIOS OFRECIDOS:</h4>
+									 <div ng-bind-html="item.serv | nl2br"></div>
+								</div>
+							</li>	
+						</ul>
+					</div><!--tab-->
+					
 					<div ng-tab-body="animated fadeInUpBig" class="tab-pane" >
 						<div class="row tienda__rank--totalw" >
 							<div class="col-xs-7">
@@ -48,7 +91,7 @@
 						
 						<div class="row tienda__comentarios__form">
 							<div class="col-md-12">
-								<div ng-include="'templates/comentarios.html'" ></div>
+								<div ng-include="'templates/comentarios.html'" ></div> 
 							</div>
 						</div>
 					</div><!--tab-->

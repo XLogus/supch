@@ -1,0 +1,78 @@
+[10-Nov-2015 22:22:29 UTC] PHP Warning:  require(JWT.php): failed to open stream: No such file or directory in /home2/chinoboca/public_html/nuevo/json/login.php on line 3
+[10-Nov-2015 22:22:29 UTC] PHP Warning:  require(JWT.php): failed to open stream: No such file or directory in /home2/chinoboca/public_html/nuevo/json/login.php on line 3
+[10-Nov-2015 22:22:29 UTC] PHP Fatal error:  require(): Failed opening required 'JWT.php' (include_path='.:/opt/php54/lib/php') in /home2/chinoboca/public_html/nuevo/json/login.php on line 3
+[10-Nov-2015 22:36:20 UTC] PHP Fatal error:  Class 'JWT' not found in /home2/chinoboca/public_html/nuevo/json/login.php on line 26
+[10-Nov-2015 22:39:36 UTC] PHP Fatal error:  Class 'JWT' not found in /home2/chinoboca/public_html/nuevo/json/login.php on line 27
+[10-Nov-2015 16:42:49 America/Chicago] PHP Warning:  The use statement with non-compound name 'JWT' has no effect in /home2/chinoboca/public_html/nuevo/json/login.php on line 4
+[10-Nov-2015 22:42:49 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/chinoboca/public_html/nuevo/json/login.php:4) in /home2/chinoboca/public_html/nuevo/wp-includes/pluggable.php on line 935
+[10-Nov-2015 22:42:49 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/chinoboca/public_html/nuevo/json/login.php:4) in /home2/chinoboca/public_html/nuevo/wp-includes/pluggable.php on line 936
+[10-Nov-2015 22:42:49 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/chinoboca/public_html/nuevo/json/login.php:4) in /home2/chinoboca/public_html/nuevo/wp-includes/pluggable.php on line 937
+[10-Nov-2015 22:42:49 UTC] PHP Fatal error:  Class 'JWT' not found in /home2/chinoboca/public_html/nuevo/json/login.php on line 28
+[10-Nov-2015 22:43:44 UTC] PHP Fatal error:  Class 'JWT\JWT' not found in /home2/chinoboca/public_html/nuevo/json/login.php on line 28
+[10-Nov-2015 16:44:14 America/Chicago] PHP Warning:  The use statement with non-compound name 'JWT' has no effect in /home2/chinoboca/public_html/nuevo/json/login.php on line 4
+[10-Nov-2015 22:44:14 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/chinoboca/public_html/nuevo/json/login.php:4) in /home2/chinoboca/public_html/nuevo/wp-includes/pluggable.php on line 935
+[10-Nov-2015 22:44:14 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/chinoboca/public_html/nuevo/json/login.php:4) in /home2/chinoboca/public_html/nuevo/wp-includes/pluggable.php on line 936
+[10-Nov-2015 22:44:14 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/chinoboca/public_html/nuevo/json/login.php:4) in /home2/chinoboca/public_html/nuevo/wp-includes/pluggable.php on line 937
+[10-Nov-2015 22:44:14 UTC] PHP Fatal error:  Class 'JWT' not found in /home2/chinoboca/public_html/nuevo/json/login.php on line 28
+[10-Nov-2015 22:46:12 UTC] PHP Fatal error:  Class 'JWT' not found in /home2/chinoboca/public_html/nuevo/json/login.php on line 28
+[10-Nov-2015 16:46:25 America/Chicago] PHP Warning:  The use statement with non-compound name 'JWT' has no effect in /home2/chinoboca/public_html/nuevo/json/login.php on line 4
+[10-Nov-2015 22:46:25 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/chinoboca/public_html/nuevo/json/login.php:4) in /home2/chinoboca/public_html/nuevo/wp-includes/pluggable.php on line 935
+[10-Nov-2015 22:46:25 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/chinoboca/public_html/nuevo/json/login.php:4) in /home2/chinoboca/public_html/nuevo/wp-includes/pluggable.php on line 936
+[10-Nov-2015 22:46:25 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/chinoboca/public_html/nuevo/json/login.php:4) in /home2/chinoboca/public_html/nuevo/wp-includes/pluggable.php on line 937
+[10-Nov-2015 22:46:25 UTC] PHP Fatal error:  Class 'JWT' not found in /home2/chinoboca/public_html/nuevo/json/login.php on line 28
+[10-Nov-2015 16:47:34 America/Chicago] PHP Warning:  The use statement with non-compound name 'JWT' has no effect in /home2/chinoboca/public_html/nuevo/json/login.php on line 4
+[10-Nov-2015 22:47:34 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/chinoboca/public_html/nuevo/json/login.php:4) in /home2/chinoboca/public_html/nuevo/wp-includes/pluggable.php on line 935
+[10-Nov-2015 22:47:34 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/chinoboca/public_html/nuevo/json/login.php:4) in /home2/chinoboca/public_html/nuevo/wp-includes/pluggable.php on line 936
+[10-Nov-2015 22:47:34 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/chinoboca/public_html/nuevo/json/login.php:4) in /home2/chinoboca/public_html/nuevo/wp-includes/pluggable.php on line 937
+[10-Nov-2015 22:47:34 UTC] PHP Fatal error:  Class 'JWT' not found in /home2/chinoboca/public_html/nuevo/json/login.php on line 28
+[10-Nov-2015 22:48:55 UTC] PHP Fatal error:  Class 'Firebase\JWT\JWT' not found in /home2/chinoboca/public_html/nuevo/json/login.php on line 28
+[10-Nov-2015 22:49:59 UTC] PHP Fatal error:  Class 'Firebase\JWT\JWT' not found in /home2/chinoboca/public_html/nuevo/json/login.php on line 28
+[10-Nov-2015 22:50:32 UTC] PHP Fatal error:  Class 'Firebase\JWT\JWT' not found in /home2/chinoboca/public_html/nuevo/json/login.php on line 28
+[10-Nov-2015 22:51:40 UTC] PHP Fatal error:  Class 'Firebase\JWT\JWT' not found in /home2/chinoboca/public_html/nuevo/json/login.php on line 28
+[10-Nov-2015 22:52:41 UTC] PHP Fatal error:  Class 'Firebase\JWT\JWT' not found in /home2/chinoboca/public_html/nuevo/json/login.php on line 28
+[10-Nov-2015 22:52:57 UTC] PHP Fatal error:  Class 'Firebase\JWT\JWT' not found in /home2/chinoboca/public_html/nuevo/json/login.php on line 28
+[10-Nov-2015 23:08:28 UTC] PHP Warning:  require(JWT.php): failed to open stream: No such file or directory in /home2/chinoboca/public_html/nuevo/json/login.php on line 3
+[10-Nov-2015 23:08:28 UTC] PHP Warning:  require(JWT.php): failed to open stream: No such file or directory in /home2/chinoboca/public_html/nuevo/json/login.php on line 3
+[10-Nov-2015 23:08:28 UTC] PHP Fatal error:  require(): Failed opening required 'JWT.php' (include_path='.:/opt/php54/lib/php') in /home2/chinoboca/public_html/nuevo/json/login.php on line 3
+[10-Nov-2015 23:08:40 UTC] PHP Fatal error:  Class 'OAuth2\Encryption\Jwt' not found in /home2/chinoboca/public_html/nuevo/json/JWT.php on line 24
+[10-Nov-2015 23:15:03 UTC] PHP Warning:  openssl_sign(): supplied key param cannot be coerced into a private key in /home2/chinoboca/public_html/nuevo/json/OAuth2/Encryption/Jwt.php on line 124
+[10-Nov-2015 23:15:03 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Unable to sign data.' in /home2/chinoboca/public_html/nuevo/json/OAuth2/Encryption/Jwt.php:125
+Stack trace:
+#0 /home2/chinoboca/public_html/nuevo/json/OAuth2/Encryption/Jwt.php(109): OAuth2\Encryption\Jwt->generateRSASignature('eyJ0eXAiOiJKV1Q...', 'superchinoskey1...', 7)
+#1 /home2/chinoboca/public_html/nuevo/json/OAuth2/Encryption/Jwt.php(22): OAuth2\Encryption\Jwt->sign('eyJ0eXAiOiJKV1Q...', 'superchinoskey1...', 'RS256')
+#2 /home2/chinoboca/public_html/nuevo/json/JWT.php(30): OAuth2\Encryption\Jwt->encode(Array, 'superchinoskey1...', 'RS256')
+#3 /home2/chinoboca/public_html/nuevo/json/login.php(26): generateJWT('superchinoskey1...', 'test', 2, 'https://superch...')
+#4 {main}
+  thrown in /home2/chinoboca/public_html/nuevo/json/OAuth2/Encryption/Jwt.php on line 125
+[10-Nov-2015 23:44:39 UTC] PHP Warning:  openssl_sign(): supplied key param cannot be coerced into a private key in /home2/chinoboca/public_html/nuevo/json/OAuth2/Encryption/Jwt.php on line 124
+[10-Nov-2015 23:44:39 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Unable to sign data.' in /home2/chinoboca/public_html/nuevo/json/OAuth2/Encryption/Jwt.php:125
+Stack trace:
+#0 /home2/chinoboca/public_html/nuevo/json/OAuth2/Encryption/Jwt.php(109): OAuth2\Encryption\Jwt->generateRSASignature('eyJ0eXAiOiJKV1Q...', '461960538448143...', 7)
+#1 /home2/chinoboca/public_html/nuevo/json/OAuth2/Encryption/Jwt.php(22): OAuth2\Encryption\Jwt->sign('eyJ0eXAiOiJKV1Q...', '461960538448143...', 'RS256')
+#2 /home2/chinoboca/public_html/nuevo/json/JWT.php(30): OAuth2\Encryption\Jwt->encode(Array, '461960538448143...', 'RS256')
+#3 /home2/chinoboca/public_html/nuevo/json/login.php(26): generateJWT('461960538448143...', 'test', 2, 'https://superch...')
+#4 {main}
+  thrown in /home2/chinoboca/public_html/nuevo/json/OAuth2/Encryption/Jwt.php on line 125
+[11-Nov-2015 01:09:45 UTC] PHP Warning:  base64_encode() expects parameter 1 to be string, array given in /home2/chinoboca/public_html/nuevo/json/JWT.php on line 13
+[11-Nov-2015 01:12:40 UTC] PHP Warning:  base64_encode() expects parameter 1 to be string, array given in /home2/chinoboca/public_html/nuevo/json/JWT.php on line 13
+[10-Nov-2015 20:09:27 America/Chicago] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home2/chinoboca/public_html/nuevo/json/login.php on line 55
+[10-Nov-2015 20:18:02 America/Chicago] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home2/chinoboca/public_html/nuevo/json/login.php on line 55
+[07-Jan-2016 15:09:20 America/Chicago] PHP Parse error:  syntax error, unexpected ':', expecting ')' in /home2/chinoboca/public_html/nuevo/json/chinos-vertodos.php on line 68
+[07-Jan-2016 21:10:26 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home2/chinoboca/public_html/nuevo/json/chinos-vertodos.php on line 3
+[07-Jan-2016 21:10:26 UTC] PHP Warning:  require(../functions.php): failed to open stream: No such file or directory in /home2/chinoboca/public_html/nuevo/json/chinos-vertodos.php on line 3
+[07-Jan-2016 21:10:26 UTC] PHP Fatal error:  require(): Failed opening required '../functions.php' (include_path='.:/opt/php54/lib/php') in /home2/chinoboca/public_html/nuevo/json/chinos-vertodos.php on line 3
+[07-Jan-2016 23:36:57 UTC] PHP Fatal error:  Call to undefined function recoger_banner() in /home2/chinoboca/public_html/nuevo/json/chinos-versuper.php on line 110
+[07-Jan-2016 23:37:59 UTC] PHP Warning:  require(function.php): failed to open stream: No such file or directory in /home2/chinoboca/public_html/nuevo/json/chinos-versuper.php on line 3
+[07-Jan-2016 23:37:59 UTC] PHP Warning:  require(function.php): failed to open stream: No such file or directory in /home2/chinoboca/public_html/nuevo/json/chinos-versuper.php on line 3
+[07-Jan-2016 23:37:59 UTC] PHP Fatal error:  require(): Failed opening required 'function.php' (include_path='.:/opt/php54/lib/php') in /home2/chinoboca/public_html/nuevo/json/chinos-versuper.php on line 3
+[07-Jan-2016 19:06:00 America/Chicago] PHP Parse error:  syntax error, unexpected 'function' (T_FUNCTION) in /home2/chinoboca/public_html/nuevo/json/save_comment.php on line 14
+[07-Jan-2016 19:08:16 America/Chicago] PHP Parse error:  syntax error, unexpected 'function' (T_FUNCTION) in /home2/chinoboca/public_html/nuevo/json/save_comment.php on line 14
+[08-Jan-2016 01:09:06 UTC] PHP Fatal error:  Cannot redeclare save_comment_wp() (previously declared in /home2/chinoboca/public_html/nuevo/json/save_comment.php:14) in /home2/chinoboca/public_html/nuevo/wp-content/themes/superchinos/functions.php on line 320
+[08-Jan-2016 01:19:31 UTC] PHP Fatal error:  Call to a member function last_query() on a non-object in /home2/chinoboca/public_html/nuevo/json/save_comment.php on line 14
+[08-Jan-2016 01:22:40 UTC] PHP Fatal error:  Call to a member function last_query() on a non-object in /home2/chinoboca/public_html/nuevo/json/save_comment.php on line 14
+[08-Jan-2016 01:23:10 UTC] PHP Fatal error:  Call to a member function last_query() on a non-object in /home2/chinoboca/public_html/nuevo/json/save_comment.php on line 14
+[08-Jan-2016 01:36:33 UTC] PHP Fatal error:  Call to a member function last_query() on a non-object in /home2/chinoboca/public_html/nuevo/json/save_comment.php on line 14
+[08-Jan-2016 01:40:49 UTC] PHP Fatal error:  Call to a member function last_query() on a non-object in /home2/chinoboca/public_html/nuevo/json/save_comment.php on line 14
+[08-Jan-2016 01:43:59 UTC] PHP Fatal error:  Call to a member function last_query() on a non-object in /home2/chinoboca/public_html/nuevo/json/save_comment.php on line 15
+[08-Jan-2016 01:45:33 UTC] PHP Fatal error:  Call to a member function last_query() on a non-object in /home2/chinoboca/public_html/nuevo/json/save_comment.php on line 15
+[07-Jan-2016 20:05:13 America/Chicago] PHP Parse error:  syntax error, unexpected '$commentdata' (T_VARIABLE) in /home2/chinoboca/public_html/nuevo/json/save_comment.php on line 26

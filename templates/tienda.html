@@ -23,11 +23,11 @@
 			{{item.direccion}}
 		</div>
 		<div class="col-xs-6">
-			<img src="{{item.icon2}}" alt=""/>
+			<img width="65" src="{{item.icon2}}" alt=""/>
 		</div>
 	</div><!--row-->
 	
-	<div class="row tienda__datosw" ng-if="item.lista_tipo=='rojo'">
+	<div class="row tienda__datosw" ng-if="item.lista_tipo=='rojo' || item.lista_tipo=='verde'">
 		<div class="col-xs-6">
 			<img src="{{item.img}}" alt=""/>
 		</div>
@@ -49,6 +49,9 @@
 				</div>
 				<div ng-switch-when="negro">
 					<div ng-include="'templates/negro.html'" ></div> 
+				</div>	
+				<div ng-switch-when="verde">
+					<div ng-include="'templates/verde.html'" ></div> 
 				</div>				
 			</div>			
 		</div>
@@ -70,6 +73,12 @@
 			<i class="fa fa-google-plus"></i>
 		</a>
 		</div>
-	</div><!--row-->
-	
+	</div><!--row-->	
 </div>
+
+<div class="overlay" ng-hide="showbanner">
+	<a href="" class="cerrar" ng-click="cerrar_banner()">x</a>
+	<div class="banner__principal">
+		<img src="{{home_banner_principal}}" alt=""/>		
+	</div>
+</div><!--overlay-->

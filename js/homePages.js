@@ -56,6 +56,10 @@ angular.module('app.homePages', [])
 		$location.path("/tienda/"+cual);
 	}
 	
+	$scope.cerrar_banner = function(event, cual) {
+		$scope.showbanner = true;
+	}
+	
 	
 	$scope.geolocalizar = function() {
 		var onSuccess = function(position) {
@@ -89,7 +93,6 @@ angular.module('app.homePages', [])
 			}
 		});
 	};
-
 	
 	$http({
         method: "JSONP", 
@@ -100,6 +103,9 @@ angular.module('app.homePages', [])
 		success(function(data, status) {
 			$scope.status = status;
 			$scope.supers = data.items; 
+			var banners = data.banners; 						
+			$rootScope.home_banner_footer = banners[0].banner_footer;
+			$rootScope.home_banner_principal = banners[0].banner_principal;
 			$scope.readyForMap = true;						
 			//console.log('controller_partidos: '+$scope.locales);
 			//console.log(JSON.stringify($scope.locales, null, 4));
