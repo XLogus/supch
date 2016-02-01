@@ -97,6 +97,11 @@
 	  
 		<script type="text/javascript">
             //app.initialize();
+            function onDeviceReady() {
+                setTimeout(function() {
+                    navigator.splashscreen.hide();
+            }, 5000);
+            }
 		</script>
    </body>
 </html>
