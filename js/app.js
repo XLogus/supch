@@ -98,21 +98,28 @@ myApp.run(['$location', '$rootScope', 'jwtHelper', 'store', function($location, 
 	$rootScope.$on('$routeChangeStart', function (event, current, next) {		
 		$rootScope.autho = current.$$route.authorization;  
 		var token = store.get("token") || null;
-		if($rootScope.autho == true) {			
+		//if($rootScope.autho == true) {			
 			if(!token) {
-				$location.path("/login");
-			} else {
+				$rootScope.algo = false;
+				if($rootScope.autho == true) {	
+					$location.path("/login");		
+				}
+			} else {				
+				$rootScope.algo = true;
+				if($rootScope.autho == true) {	
 				var bool = jwtHelper.isTokenExpired(token);
 				if(bool === true) {
 					$location.path("/login");
 				}
+				}
 			}
-		}		
+		//}		
 	});	
-	$rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
+	$rootScope.$on('$routeChangeSuccess', function (event, current, previous, store) {
         $rootScope.title = current.$$route.title;        
 		$rootScope.slug = current.$$route.slug;        
-        $rootScope.activePath = $location.path();	
+        $rootScope.activePath = $location.path();		
+		
 
 		//$rootScope.home_banner_footer = "http://superchinos.com.ar/nuevo/wp-content/uploads/2015/10/banner-cuido.png";
     });    
@@ -186,3 +193,8 @@ myApp.filter('nl2br', function() {
         return lines.join('<br />');
     }
 });
+
+
+function ocultaLocation() {	
+	document.getElementById('locationWrap').style.display = 'none';
+}

@@ -47,6 +47,9 @@
             </nav>
             
          </header>
+		 
+	<div class="location" id="locationWrap"></div>
+		 
 	<div class="myApp"
 		ui-swipe-right='Ui.turnOn("uiSidebarLeft")'
 		ui-swipe-left='Ui.turnOff("uiSidebarLeft")'>
@@ -97,6 +100,7 @@
 	  
 		<script type="text/javascript">
             //app.initialize();
+			setTimeout("ocultaLocation()",3000);
 		</script>
    </body>
 </html>
