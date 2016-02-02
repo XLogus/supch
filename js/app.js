@@ -193,3 +193,8 @@ myApp.filter('nl2br', function() {
         return lines.join('<br />');
     }
 });
+
+
+function ocultaLocation() {	
+	document.getElementById('locationWrap').style.display = 'none';
+}

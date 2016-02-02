@@ -228,6 +228,8 @@ h2.titulo__about img{ max-width:65px; }
 .nav-tabs > li > a {  margin:0px; border-radius:0px; background-color:#d9d9d9; color:#555; font-size:11px; text-align:center; font-weight:bold; padding:15px 10px; }
 
 
+.location { position:fixed; width:100%; height:100%; background-color:#ed1c2e; background-image:url(../img/location.png); background-repeat:no-repeat; background-position: top center; background-size:cover; z-index:99999; top:0px; }
+
 /**********************************
    Login / Registro
 ***********************************/
