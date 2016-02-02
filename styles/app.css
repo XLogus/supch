@@ -36,7 +36,7 @@ body.home .myApp, body.home .container.ng-scope, body.home .container.ng-scope .
 /***************************
   NavBar
 ******************************/
-.navbar-app { background-color:#ed1c2f; border:none; }
+.navbar-app { background-color:#ed1c2f; border:none; position:fixed; }
 .navbar-toggle .icon-bar { background-color:#FFF; }  
 .navbar-toggle { padding: 9px 5px; margin-top: 5px; }
 
@@ -275,6 +275,8 @@ p.estaregistrado, p.estaregistrado a { color:#FFF; font-size:17px; text-align:ce
 img.left { float:left; }
 img.right { float:right; }
 img.center { margin:auto; }
+
+.rojo { color: #ed1c2e !important;  }
 
 
 .overlay {
