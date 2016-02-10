@@ -70,7 +70,7 @@ body.tienda nav.navbar-absolute-bottom, body.about nav.navbar-absolute-bottom {
 	position:relative;
 }
 .navbar-brand-center {
-	position:fixed;
+	position:relative !important;
 }
 body.home .navbar__adorno {
 	height:120px;
