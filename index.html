@@ -104,6 +104,14 @@
 			document.addEventListener("deviceready", onDeviceReady, false);
 		}
 		function onDeviceReady() {
+			/*
+			if (parseFloat(window.device.version) === 7.0) {
+				document.body.style.marginTop = "20px";				
+			}
+			*/
+			if(window.StatusBar) {
+				StatusBar.overlaysWebView(false);
+			}
 			setTimeout("ocultaLocation()",5000);
 		}
 		</script>
