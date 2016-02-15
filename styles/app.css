@@ -4,6 +4,7 @@ body {
 	font-family: 'Lato', sans-serif;
 	font-weight:400;
 	 -webkit-overflow-scrolling: touch;
+     
 }
 body.home {
 	overflow:hidden;
@@ -28,16 +29,16 @@ footer {
 	height:35px;
 }
 main {
-	min-height:300px;;
+    min-height:300px;;
 }
 body.home .myApp, body.home .container.ng-scope, body.home .container.ng-scope .row {
 	height:100%;
 }
-
+.scrollable-content{padding:51px 0 0 0	;}
 /***************************
   NavBar
 ******************************/
-.navbar-app { background-color:#ed1c2f; border:none; position:fixed; }
+.navbar-app { background-color:#ed1c2f; border:none; }
 .navbar-toggle .icon-bar { background-color:#FFF; }  
 .navbar-toggle { padding: 9px 5px; margin-top: 5px; }
 
@@ -284,11 +285,11 @@ img.center { margin:auto; }
 
 .overlay {
 	width:100%;
-	height:100%;
+    height:calc(100% - 100px);
 	position:fixed;
 	background-color:rgba(0,0,0,0.5);
 	z-index:9999;
-	top:0px;
+	top:51px;
 	text-align:right;
 }
 	.overlay img{
