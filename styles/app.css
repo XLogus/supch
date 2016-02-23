@@ -216,6 +216,9 @@ h2.titulo__about {
 h2.titulo__about.roja {
 	color:#ed1c2e;
 }
+h2.titulo__about.verde {
+	color:#00b545;
+}
 h2.titulo__about img{ max-width:65px; }
 
 /************************************
