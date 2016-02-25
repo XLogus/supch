@@ -304,10 +304,11 @@ img.center { margin:auto; }
 	background-color:rgba(0,0,0,0.5);
 	z-index:9999;	
 	text-align:right;
+    padding-top:50px;
 }
 	.overlay img{
 		display:block;
-		max-width:95%;
+		max-width:90%;
 		margin:auto;
 	}
 	.overlay a.cerrar {
