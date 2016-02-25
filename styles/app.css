@@ -336,7 +336,7 @@ img.center { margin:auto; }
 	.default-logo { display:none; }
 	.retina-logo { display:inherit; }
 	.gpslocator {
-		bottom:10px;
+		bottom:60px;
 	}
 }
 
