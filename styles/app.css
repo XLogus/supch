@@ -147,8 +147,8 @@ h3.tienda__datos { font-size:12px; font-weight:bold; color:#ed1c2e; margin-botto
 
 a.icon__share { color:#FFF; font-size:32px; background-color:#ed1c2e; border-right:1px solid #FFF; display:block; text-align:center; height:70px; vertical-align:middle; line-height:70px; }
 
-a.icon__share.negro { background-color:#000; }
-a.icon__share.verde { background-color:#43b44f; }
+a.icon__share.icon__share--negro { background-color:#000; }
+a.icon__share.icon__share--verde { background-color:#43b44f; }
 
 .tabWrapper { padding:20px 0px; }
 
@@ -335,6 +335,9 @@ img.center { margin:auto; }
 	}
 	.default-logo { display:none; }
 	.retina-logo { display:inherit; }
+	.gpslocator {
+		bottom:10px;
+	}
 }
 
 
