@@ -258,13 +258,21 @@ p.estaregistrado, p.estaregistrado a { color:#FFF; font-size:17px; text-align:ce
 /**************************************
   MISC
 ***************************************/  
-.bz-slider {                
+			.tienda__slide .bz-slider {                
                 height: 180px;
                 overflow: hidden;
                 background-color: #FFF;                
             }
-            .bz-slide {                
+            .tienda__slide .bz-slide {                
                 height: 180px;
+            }
+			.home__slide .bz-slide {                
+                height: 56px;
+            }
+			.home__slide .bz-slider {                
+                height: 56px;
+                overflow: hidden;
+                background-color: #FFF;                
             }
             .controls {
                 position: absolute;

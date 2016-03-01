@@ -70,11 +70,15 @@
       </div>
       <nav class="navbar navbar-app navbar-absolute-bottom">
       <div class="navbar__adorno">
-			   </div>
-               <div class="navbar__banner">
-               <img src="{{home_banner_footer}}" alt=""/>
-               </div>
-               </nav>
+	</div>
+		<div class="navbar__banner home__slide" ng-controller="footerBanner">
+		<div bz-slider delay="7000" autoplay="true">
+            <div class="bz-slide" ng-repeat="(i, slide) in home_banner_footer" ng-show="i == $slideIndex" ng-class="animation">
+                <img ng-src="{{ slide }}" />
+            </div>
+		</div>
+		</div>
+	</nav>
     </div>     
       
       

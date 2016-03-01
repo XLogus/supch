@@ -15,6 +15,15 @@ angular.module('app.homePages', [])
 	};
   })
   
+  
+  .controller('footerBanner', function($scope, $rootScope) {	
+	$rootScope.home_banner_footer = [
+                {'title': 'hell', 'class': 'animation-slide', 'image': 'images/image1.png'},
+                {'title': 'sadas', 'class': 'animation-fade', 'image': 'images/image2.png'}
+            ];
+  })
+  
+  
   .controller('HomeCtrl', function($scope, $rootScope, $http, $location, welcomeMessage, jwtHelper, store, CONFIG) {	
 	/*
 	var token = store.get("token");	
@@ -22,6 +31,9 @@ angular.module('app.homePages', [])
 	$scope.user = tokenPayload.iss;	
 	//alert($scope.user);
 	*/
+	
+	
+	
 	
 	
 	var marker, map;
@@ -105,7 +117,7 @@ angular.module('app.homePages', [])
 			$scope.supers = data.items; 
 			var banners = data.banners; 						
 			$rootScope.home_banner_footer = banners[0].banner_footer;
-			$rootScope.home_banner_principal = banners[0].banner_principal;
+			$rootScope.home_banner_principal = banners[0].banner_principal[0];
 			$scope.readyForMap = true;						
 			//console.log('controller_partidos: '+$scope.locales);
 			//console.log(JSON.stringify($scope.locales, null, 4));

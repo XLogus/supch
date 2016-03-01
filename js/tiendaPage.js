@@ -42,7 +42,7 @@ myApp.controller('TiendaCtrl', function ($scope, $http, $location, $routeParams,
 			
 			var banners = data.banners;
 			$rootScope.home_banner_footer = banners[0].banner_footer;
-			$rootScope.home_banner_principal = banners[0].banner_principal;
+			$rootScope.home_banner_principal = banners[0].banner_principal[0];
 			
 			//console.log(JSON.stringify(data.items, null, 4));			
 		});  
